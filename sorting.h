@@ -1,13 +1,12 @@
 #ifndef SORTING_H
 #define SORTING_H
 
-void bubbleSorting(int *tab, int size, SDL_Renderer *renderer);
+#include "visual.h"
 
-void insertionSorting(int *tab, int size, SDL_Renderer *renderer);
-
-void selectionSorting(int *tab, int size, SDL_Renderer *renderer);
-
-void quickSorting(int *tab, int low, int high, int size, SDL_Renderer *renderer);
+void bubbleSorting(int *tab, int size, SDL_Renderer *r, TTF_Font *font, MenuPosition *pos, int delay);
+void insertionSorting(int *tab, int size, SDL_Renderer *r, TTF_Font *font, MenuPosition *pos, int delay);
+void selectionSorting(int *tab, int size, SDL_Renderer *r, TTF_Font *font, MenuPosition *pos, int delay);
+void quickSorting(int *tab, int low, int high, int size, SDL_Renderer *r, TTF_Font *font, MenuPosition *pos, int delay);
 
 
 #endif
